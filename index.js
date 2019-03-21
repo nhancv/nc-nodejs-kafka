@@ -17,13 +17,18 @@ app.get('/', function (req, res) {
 
 app.post('/', function (req, res) {
     try {
+        const start = new Date()
+        console.info('Receiving %s', start)
         var form = new formidable.IncomingForm()
         form.parse(req)
         form.on('fileBegin', function (name, file) {
             file.path = path.join(uploadDir, file.name)
         })
         form.on('file', function (name, file) {
-            console.log('Uploaded ' + file.name)
+            
+            const end = new Date()
+            console.info('Finished %s', end)
+            console.info('Uploaded %s in %dms', file.name, end-start)
             res.end()
         })
     } catch (error) {

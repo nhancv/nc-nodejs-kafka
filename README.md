@@ -17,14 +17,20 @@ Client upload via POST method to Server.
 **Client info 
 CPU: 5.6%
 Mem: 43.1MB
-Network: up (14.7 MBps), recv (240KB)
-Upload info
-Start time: Thu Mar 21 2019 17:12:00 GMT+0700 (Indochina Time)
-Finish time: Thu Mar 21 2019 17:12:42 GMT+0700 (Indochina Time)
-Uploaded in 42637ms
+Network: up (11.7 MBps), recv (240KB)
+Test
+Start time: Thu Mar 21 2019 17:25:51 GMT+0700 (Indochina Time)
+Finish time: Thu Mar 21 2019 17:26:34 GMT+0700 (Indochina Time)
+Uploaded in 42947ms
 
 **Server info
-
-
+CPU: 3.2%
+Mem: 17.5MB
+Disk: 11.3MB/s
+Net: 96 Mbps
+Test
+Receiving Thu Mar 21 2019 17:25:53 GMT+0700 (Indochina Time)
+Finished Thu Mar 21 2019 17:26:36 GMT+0700 (Indochina Time)
+Uploaded sample.txt in 42917ms
 
 ```
