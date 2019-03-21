@@ -3,3 +3,4 @@ node_modules
 .apikey*.json
 *.log
 uploads
+dumps
