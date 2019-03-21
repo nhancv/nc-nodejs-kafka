@@ -16,7 +16,7 @@ function getFilesizeInBytes(fPath) {
   }
 }
 
-function writeToFile(stream, fPath, index = 1, step = 1000000, maxFileSizeMB = 100) {
+function writeToFile(stream, fPath, index = 1, step = 1000000, maxFileSizeMB = 500) {
   const length = index + step
   stream.once('finish', function(fd) {
     const fileSizeinMB = getFilesizeInBytes(fPath) / 1000000.0
